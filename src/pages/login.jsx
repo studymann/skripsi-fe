@@ -5,7 +5,7 @@ const LoginPage = () => {
     return (
         <>
             <div className="flex justify-center items-center min-h-screen bg-gradient-to-r from-cyan-500 to-blue-500">
-                <AuthLayout width="max-w-sm" title="Login" subTitle="Welcome, please enter your account...">
+                <AuthLayout id="login" width="max-w-sm" title="Login" subTitle="Welcome, please enter your account...">
                     <FormLogin />
                 </AuthLayout>
             </div>
