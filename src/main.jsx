@@ -5,8 +5,8 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import LoginPage from './pages/auth/login.jsx'
 import RegisterPage from './pages/auth/register.jsx'
 import NotFoundPage from './pages/errors/404.jsx'
-import StudentDashboardPage from './pages/student/index.jsx'
-import AdminDashboardPage from './pages/gtk/index.jsx'
+import StudentDashboardPage from './pages/user/index.jsx'
+import AdminDashboardPage from './pages/admin/index.jsx'
 
 const router = createBrowserRouter([
   {
