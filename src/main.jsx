@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import HomePage from './pages/home.jsx'
 import LoginPage from './pages/auth/login.jsx'
 import RegisterPage from './pages/auth/register.jsx'
 import NotFoundPage from './pages/errors/404.jsx'
@@ -11,8 +12,12 @@ import AdminDashboardPage from './pages/admin/index.jsx'
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <LoginPage />,
+    element: <HomePage />,
     errorElement: <NotFoundPage />
+  },
+  {
+    path: "/login",
+    element: <LoginPage />
   },
   {
     path: "/register",

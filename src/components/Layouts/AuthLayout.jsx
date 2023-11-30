@@ -5,7 +5,10 @@ import Button from "../Elements/Button"
 const AuthLayout = (props) => {
     const { title, subTitle, children, width, id } = props
     return (
-        <>
+        <div className="w-full flex flex-col items-center justify-center ">
+            <div className="my-5">
+                <Link to="/" className="text-3xl font-bold text-gray-900 dark:text-white">LOGO</Link>
+            </div>
             <div className={`w-full ${width} p-4 bg-white border border-gray-200 rounded-lg drop-shadow-lg sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700`}>
                 <form className="" action="#">
                     <div className="mb-6">
@@ -25,14 +28,14 @@ const AuthLayout = (props) => {
                             <>
                                 <Button>Register</Button>
                                 <div className="text-sm font-medium text-center text-gray-500 dark:text-gray-300">
-                                    Already have account? <Link to="/" className="text-blue-700 hover:underline dark:text-blue-500">Sign in here...</Link>
+                                    Already have account? <Link to="/login" className="text-blue-700 hover:underline dark:text-blue-500">Sign in here...</Link>
                                 </div>
                             </>
                         )}
                     </div>
                 </form>
             </div>
-        </>
+        </div>
     )
 }
 

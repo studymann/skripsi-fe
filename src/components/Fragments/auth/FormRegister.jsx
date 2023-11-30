@@ -1,4 +1,4 @@
-import InputForm from "../Elements/Input"
+import InputForm from "../../Elements/Input"
 
 const FormRegister = () => {
     return (
