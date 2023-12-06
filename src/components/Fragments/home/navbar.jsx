@@ -13,7 +13,7 @@ const HomeNavbar = () => {
                             <li><a href="#home">Beranda</a></li>
                             <li><a href="#about">Tentang</a></li>
                             <li><a href="#program">Program</a></li>
-                            <li><a>Beasiswa</a></li>
+                            <li><a href="#scholarship">Beasiswa</a></li>
                             <li><a>Galeri</a></li>
                             <li><a>Kontak</a></li>
                         </ul>
@@ -25,7 +25,7 @@ const HomeNavbar = () => {
                         <li><a href="#home">Beranda</a></li>
                         <li><a href="#about">Tentang</a></li>
                         <li><a href="#program">Program</a></li>
-                        <li><a>Beasiswa</a></li>
+                        <li><a href="#scholarship">Beasiswa</a></li>
                         <li><a>Galeri</a></li>
                         <li><a>Kontak</a></li>
                     </ul>
