@@ -14,8 +14,9 @@ const HomeNavbar = () => {
                             <li><a href="#about">Tentang</a></li>
                             <li><a href="#program">Program</a></li>
                             <li><a href="#scholarship">Beasiswa</a></li>
-                            <li><a>Galeri</a></li>
-                            <li><a>Kontak</a></li>
+                            <li><a href="#alumni">Alumni</a></li>
+                            <li><a href="#gallery">Galeri</a></li>
+                            <li><a href="#contact">Kontak</a></li>
                         </ul>
                     </div>
                     <a href="/" className="btn btn-ghost text-xl"><img src="/img/logo.png" className="w-12" alt="" /></a>
@@ -26,8 +27,9 @@ const HomeNavbar = () => {
                         <li><a href="#about">Tentang</a></li>
                         <li><a href="#program">Program</a></li>
                         <li><a href="#scholarship">Beasiswa</a></li>
-                        <li><a>Galeri</a></li>
-                        <li><a>Kontak</a></li>
+                        <li><a href="#alumni">Alumni</a></li>
+                        <li><a href="#gallery">Galeri</a></li>
+                        <li><a href="#contact">Kontak</a></li>
                     </ul>
                 </div>
                 <div className="navbar-end gap-1 mr-5">

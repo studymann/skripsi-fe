@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import Hero from "../components/Fragments/home/hero"
 import SectionHome from "../components/Fragments/home/section"
 import HomeLayout from "../components/Layouts/HomeLayout"
@@ -17,6 +18,15 @@ const HomePage = () => {
                 </SectionHome>
                 <SectionHome bgColor="bg-base-200" id="scholarship" title="BEASISWA" subTitle="Solusi Sempurna" subTitleSpan="Selesaikan Sekolah">
                     <Scholarship />
+                </SectionHome>
+                <SectionHome bgColor="bg-base-100" id="alumni" title="ALUMNI" subTitle="Berikut Daftar" subTitleSpan="Alumni">
+                    <Alumni />
+                </SectionHome>
+                <SectionHome bgColor="bg-base-200" id="gallery" title="GALERI" subTitle="Berikut" subTitleSpan="Galeri Kami">
+                    <Gallery />
+                </SectionHome>
+                <SectionHome bgColor="bg-base-100" id="contact" title="KONTAK" subTitle="Berikut Daftar" subTitleSpan="Kontak Kami">
+                    <Contact />
                 </SectionHome>
             </HomeLayout>
         </>
@@ -164,6 +174,84 @@ const Scholarship = () => {
                     <img src="/img/logo.png" alt="" className="object-cover object-center mx-auto" />
                 </div>
             </div>
+        </>
+    )
+}
+
+const Alumni = () => {
+    return (
+        <>
+            <div className="flex flex-col w-full mt-5">
+                <div className="carousel carousel-center p-4 space-x-4 bg-neutral rounded-box">
+                    <div className="carousel-item">
+                        <img src="https://daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.jpg" className="rounded-box" />
+                    </div>
+                    <div className="carousel-item">
+                        <img src="https://daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.jpg" className="rounded-box" />
+                    </div>
+                    <div className="carousel-item">
+                        <img src="https://daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.jpg" className="rounded-box" />
+                    </div>
+                    <div className="carousel-item">
+                        <img src="https://daisyui.com/images/stock/photo-1494253109108-2e30c049369b.jpg" className="rounded-box" />
+                    </div>
+                    <div className="carousel-item">
+                        <img src="https://daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.jpg" className="rounded-box" />
+                    </div>
+                    <div className="carousel-item">
+                        <img src="https://daisyui.com/images/stock/photo-1559181567-c3190ca9959b.jpg" className="rounded-box" />
+                    </div>
+                    <div className="carousel-item">
+                        <img src="https://daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.jpg" className="rounded-box" />
+                    </div>
+                </div>
+                <div className="flex items-center justify-center mt-3">
+                <a href="#" className="btn btn-accent w-1/2 lg:w-1/4">Lihat Selengkapnya</a>
+                </div>
+            </div>
+        </>
+    )
+}
+
+const Gallery = () => {
+    return (
+        <>
+            <div className="flex flex-col w-full mt-5">
+                <div className="carousel carousel-center p-4 space-x-4 bg-neutral rounded-box">
+                    <div className="carousel-item">
+                        <img src="https://daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.jpg" className="rounded-box" />
+                    </div>
+                    <div className="carousel-item">
+                        <img src="https://daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.jpg" className="rounded-box" />
+                    </div>
+                    <div className="carousel-item">
+                        <img src="https://daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.jpg" className="rounded-box" />
+                    </div>
+                    <div className="carousel-item">
+                        <img src="https://daisyui.com/images/stock/photo-1494253109108-2e30c049369b.jpg" className="rounded-box" />
+                    </div>
+                    <div className="carousel-item">
+                        <img src="https://daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.jpg" className="rounded-box" />
+                    </div>
+                    <div className="carousel-item">
+                        <img src="https://daisyui.com/images/stock/photo-1559181567-c3190ca9959b.jpg" className="rounded-box" />
+                    </div>
+                    <div className="carousel-item">
+                        <img src="https://daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.jpg" className="rounded-box" />
+                    </div>
+                </div>
+                <div className="flex items-center justify-center mt-3">
+                <a href="#" className="btn btn-accent w-1/2 lg:w-1/4">Lihat Selengkapnya</a>
+                </div>
+            </div>
+        </>
+    )
+}
+
+const Contact = () => {
+    return (
+        <>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis quod consectetur voluptates iusto neque molestias rerum minus ipsam deserunt est repellat accusantium consequuntur ad laudantium dolore hic, perferendis quos quae!
         </>
     )
 }
