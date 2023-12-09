@@ -13,7 +13,7 @@ const HomePage = () => {
                 <SectionHome bgColor="bg-base-200" id="about" title="TENTANG" subTitle="Cari Tahu Lebih Lanjut" subTitleSpan="Tentang Kami">
                     <About />
                 </SectionHome>
-                <SectionHome bgColor="bg-base-100" id="program" title="PROGRAM" subTitle="Berikut Daftar" subTitleSpan="Program Kami">
+                <SectionHome bgColor="bg-base-100" id="program" title="PROGRAM" subTitle="Berikut Daftar" subTitleSpan="Program">
                     <Program />
                 </SectionHome>
                 <SectionHome bgColor="bg-base-200" id="scholarship" title="BEASISWA" subTitle="Solusi Sempurna" subTitleSpan="Selesaikan Sekolah">
@@ -25,7 +25,7 @@ const HomePage = () => {
                 <SectionHome bgColor="bg-base-200" id="gallery" title="GALERI" subTitle="Berikut" subTitleSpan="Galeri Kami">
                     <Gallery />
                 </SectionHome>
-                <SectionHome bgColor="bg-base-100" id="contact" title="KONTAK" subTitle="Berikut Daftar" subTitleSpan="Kontak Kami">
+                <SectionHome bgColor="bg-base-100" id="contact" title="KONTAK" subTitle="Berikut Daftar" subTitleSpan="Kontak">
                     <Contact />
                 </SectionHome>
             </HomeLayout>
@@ -206,7 +206,7 @@ const Alumni = () => {
                     </div>
                 </div>
                 <div className="flex items-center justify-center mt-3">
-                <a href="#" className="btn btn-accent w-1/2 lg:w-1/4">Lihat Selengkapnya</a>
+                    <a href="#" className="btn btn-accent w-1/2 lg:w-1/4">Lihat Selengkapnya</a>
                 </div>
             </div>
         </>
@@ -241,7 +241,7 @@ const Gallery = () => {
                     </div>
                 </div>
                 <div className="flex items-center justify-center mt-3">
-                <a href="#" className="btn btn-accent w-1/2 lg:w-1/4">Lihat Selengkapnya</a>
+                    <a href="#" className="btn btn-accent w-1/2 lg:w-1/4">Lihat Selengkapnya</a>
                 </div>
             </div>
         </>
@@ -251,7 +251,75 @@ const Gallery = () => {
 const Contact = () => {
     return (
         <>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis quod consectetur voluptates iusto neque molestias rerum minus ipsam deserunt est repellat accusantium consequuntur ad laudantium dolore hic, perferendis quos quae!
+            <div className="flex flex-col w-full lg:flex-row mt-10">
+                <div className="basis-1/2 rounded-box place-items-center">
+                    <div className="flex flex-col">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d311.841699037746!2d107.74743500285577!3d-6.992516678535602!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68c304a3802455%3A0x622740a4fa5475d9!2sPKBM%20Bela%20Warga!5e0!3m2!1sid!2sid!4v1702109812756!5m2!1sid!2sid" className="w-full h-96"></iframe>
+                    </div>
+                </div>
+                <div className="divider lg:divider-horizontal"></div>
+                <div className="basis-1/2 rounded-box place-items-center flex flex-col gap-3">
+                    <div className="card w-full bg-base-100 shadow-xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 hover:outline hover:outline-2 hover:outline-accent duration-200">
+                        <figure className="px-10 pt-10">
+                            <div className="mask mask-squircle bg-base-200 hover:bg-accent p-5 transition-all">
+                                <AcademicCapIcon className="w-16 h-16" />
+                            </div>
+                        </figure>
+                        <div className="card-body items-center text-center">
+                            <h2 className="card-title font-bold">Alamat</h2>
+                            <p className="lg:text-sm">Program pendidikan non formal setingkat SD/MI yang diselenggarakan dalam bentuk Kelompok Belajar (KEJAR).</p>
+                        </div>
+                    </div>
+                    <div className="flex flex-col lg:flex-row w-full gap-3">
+                        <div className="card w-full lg:w-1/2 bg-base-100 shadow-xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 hover:outline hover:outline-2 hover:outline-accent duration-200">
+                            <figure className="px-10 pt-10">
+                                <div className="mask mask-squircle bg-base-200 hover:bg-accent p-5 transition-all">
+                                    <AcademicCapIcon className="w-16 h-16" />
+                                </div>
+                            </figure>
+                            <div className="card-body items-center text-center">
+                                <h2 className="card-title font-bold">Email</h2>
+                                <p className="lg:text-sm">Program pendidikan non formal setingkat SD/MI yang diselenggarakan dalam bentuk Kelompok Belajar (KEJAR).</p>
+                            </div>
+                        </div>
+                        <div className="card w-full lg:w-1/2 bg-base-100 shadow-xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 hover:outline hover:outline-2 hover:outline-accent duration-200">
+                            <figure className="px-10 pt-10">
+                                <div className="mask mask-squircle bg-base-200 hover:bg-accent p-5 transition-all">
+                                    <AcademicCapIcon className="w-16 h-16" />
+                                </div>
+                            </figure>
+                            <div className="card-body items-center text-center">
+                                <h2 className="card-title font-bold">Telepon</h2>
+                                <p className="lg:text-sm">Program pendidikan non formal setingkat SD/MI yang diselenggarakan dalam bentuk Kelompok Belajar (KEJAR).</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="flex flex-col lg:flex-row w-full gap-3">
+                        <div className="card w-full lg:w-1/2 bg-base-100 shadow-xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 hover:outline hover:outline-2 hover:outline-accent duration-200">
+                            <figure className="px-10 pt-10">
+                                <div className="mask mask-squircle bg-base-200 hover:bg-accent p-5 transition-all">
+                                    <AcademicCapIcon className="w-16 h-16" />
+                                </div>
+                            </figure>
+                            <div className="card-body items-center text-center">
+                                <h2 className="card-title font-bold">Intagram</h2>
+                                <p className="lg:text-sm">Program pendidikan non formal setingkat SD/MI yang diselenggarakan dalam bentuk Kelompok Belajar (KEJAR).</p>
+                            </div>
+                        </div>
+                        <div className="card w-full lg:w-1/2 bg-base-100 shadow-xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 hover:outline hover:outline-2 hover:outline-accent duration-200">
+                            <figure className="px-10 pt-10">
+                                <div className="mask mask-squircle bg-base-200 hover:bg-accent p-5 transition-all">
+                                    <AcademicCapIcon className="w-16 h-16" />
+                                </div>
+                            </figure>
+                            <div className="card-body items-center text-center">
+                                <h2 className="card-title font-bold">Facebook</h2>
+                                <p className="lg:text-sm">Program pendidikan non formal setingkat SD/MI yang diselenggarakan dalam bentuk Kelompok Belajar (KEJAR).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </>
     )
 }
